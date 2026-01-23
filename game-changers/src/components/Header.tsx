@@ -28,10 +28,10 @@ const Header = () => {
         <div className="flex items-center justify-between min-h-16">
           {/* Logo Container - Left Side */}
           <div className="flex-shrink-0 flex flex-col items-center gap-2">
-            <img 
-              src="/IMG_0960.jpeg" 
-              alt="Game Changers Logo" 
-              className="h-12 md:h-[60px] w-auto object-contain"
+            <img
+              src="/IMG_0960.jpeg"
+              alt="Game Changers Logo"
+              className="h-24 md:h-[120px] w-auto object-contain"
             />
             <div className="text-lg md:text-xl font-bold text-fresh-green text-center leading-tight">
               Game Changers
@@ -44,9 +44,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-soft-charcoal hover:text-fresh-green transition-colors duration-200 font-medium ${
-                  location.pathname === item.path ? 'text-fresh-green' : ''
-                }`}
+                className={`text-[1.2rem] text-soft-charcoal hover:text-fresh-green transition-colors duration-200 font-medium ${location.pathname === item.path ? 'text-fresh-green' : ''
+                  }`}
               >
                 {item.label}
               </Link>
@@ -57,7 +56,7 @@ const Header = () => {
           <div className="hidden md:block">
             <button
               onClick={handleCalendlyClick}
-              className="btn-primary"
+              className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
             >
               Sessions
             </button>
@@ -82,9 +81,8 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium text-soft-charcoal hover:text-fresh-green transition-colors duration-200 ${
-                    location.pathname === item.path ? 'text-fresh-green' : ''
-                  }`}
+                  className={`block px-3 py-2 text-5xl font-medium text-soft-charcoal hover:text-fresh-green transition-colors duration-200 ${location.pathname === item.path ? 'text-fresh-green' : ''
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -96,7 +94,7 @@ const Header = () => {
                     handleCalendlyClick();
                     setIsMenuOpen(false);
                   }}
-                  className="btn-primary w-full text-center"
+                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center"
                 >
                   Sessions
                 </button>

@@ -278,7 +278,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full btn-primary text-lg py-4"
+                className="w-full btn-secondary text-lg py-4"
               >
                 Send Message
               </button>

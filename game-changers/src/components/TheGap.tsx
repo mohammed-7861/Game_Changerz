@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const TheGap = () => {
   return (
-    <section className="section-padding bg-sky-blue/10">
+    <section className="section-padding bg-clean-white">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -19,7 +19,7 @@ const TheGap = () => {
             Many talented youth players have the heart, but when the game speeds up, they hesitate. They play it safe because they're worried about making mistakes.
           </p>
           <p className="text-lg text-soft-charcoal/70 leading-relaxed">
-            At Game Changers, we identify "The Gap"—that space between having the skill and having the confidence to use it. Whether they are looking to jump from Rec to Club or Club to High School, we provide a "proper" training environment where bravery is rewarded and "extra touches" are the foundation of every session.
+            At <strong>Game Changers</strong>, we identify "The Gap"—that space between having the skill and having the confidence to use it. Whether they are looking to jump from Rec to Club or Club to High School, we provide a "proper" training environment where bravery is rewarded and "extra touches" are the foundation of every session.
           </p>
         </motion.div>
       </div>

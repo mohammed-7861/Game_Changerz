@@ -20,7 +20,7 @@ const Hero = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-soft-charcoal mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-soft-charcoal mb-6 leading-tight">
             Where "Techy" Skill Meets Total Confidence.
           </h1>
           <p className="text-lg md:text-xl text-soft-charcoal/80 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -30,7 +30,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleCalendlyClick}
-            className="btn-primary text-lg px-8 py-4"
+            className="bg-sunshine-yellow text-soft-charcoal font-bold text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-lg"
           >
             Start Your Journey
           </motion.button>

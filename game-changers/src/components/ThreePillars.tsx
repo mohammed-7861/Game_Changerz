@@ -39,7 +39,7 @@ const ThreePillars = () => {
   };
 
   return (
-    <section className="section-padding bg-soft-charcoal/5">
+    <section className="section-padding bg-fresh-green/15">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

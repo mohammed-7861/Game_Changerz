@@ -28,18 +28,12 @@ const Pricing = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-2xl mx-auto mb-12"
           >
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-xl mx-auto">
               <div className="text-center">
-                <div className="text-4xl font-bold text-fresh-green mb-2">💰</div>
-                <div className="text-xl font-semibold text-soft-charcoal">$25 per session.</div>
+                <div className="text-xl font-semibold text-soft-charcoal">📅 No long-term commitments.</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-fresh-green mb-2">📅</div>
-                <div className="text-xl font-semibold text-soft-charcoal">No long-term commitments.</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-fresh-green mb-2">👥</div>
-                <div className="text-xl font-semibold text-soft-charcoal">Small groups for maximum attention.</div>
+                <div className="text-xl font-semibold text-soft-charcoal">👥 Small groups for maximum attention.</div>
               </div>
             </div>
             
@@ -71,7 +65,7 @@ const Pricing = () => {
             </p>
             <Link
               to="/contact"
-              className="btn-primary inline-block"
+              className="bg-sky-blue text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg hover:bg-blue-500 inline-block"
             >
               Contact Us
             </Link>
