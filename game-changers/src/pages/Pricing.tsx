@@ -14,26 +14,44 @@ const Pricing = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-soft-charcoal mb-4">
-              Simple, Honest Pricing
+              High-Level Coaching. Real-World Value.
             </h1>
+            <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto mb-8">
+              We believe that elite development shouldn't come with a "scammy" price tag or complex contracts.
+            </p>
           </motion.div>
 
-          {/* Main Pricing Card */}
+          {/* Pricing Highlights */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-md mx-auto mb-16"
+            className="max-w-2xl mx-auto mb-12"
           >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-fresh-green mb-2">💰</div>
+                <div className="text-xl font-semibold text-soft-charcoal">$25 per session.</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-fresh-green mb-2">📅</div>
+                <div className="text-xl font-semibold text-soft-charcoal">No long-term commitments.</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-fresh-green mb-2">👥</div>
+                <div className="text-xl font-semibold text-soft-charcoal">Small groups for maximum attention.</div>
+              </div>
+            </div>
+            
             <div className="card text-center">
-              <div className="text-6xl font-bold text-sky-blue mb-4">
+              <div className="text-6xl font-bold text-fresh-green mb-4">
                 $25
               </div>
               <div className="text-xl text-soft-charcoal/70 mb-6">
                 per session
               </div>
-              <p className="text-soft-charcoal/80 leading-relaxed">
-                No hidden fees, no matter the group size. We believe in accessible, high-quality footy for every player ready to level up.
+              <p className="text-soft-charcoal/80 leading-relaxed mb-4">
+                Whether you bring one player or a whole squad, the price stays simple. We are here for the love of the game and the growth of the players.
               </p>
             </div>
           </motion.div>
@@ -46,10 +64,10 @@ const Pricing = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl font-bold text-soft-charcoal mb-6">
-              Looking for 1-on-1 Private Training?
+              Looking for a more personal touch?
             </h2>
             <p className="text-lg text-soft-charcoal/70 mb-8 leading-relaxed">
-              Reach out below for a custom schedule tailored to your player's needs. We'll work with you to create the perfect training program.
+              Reach out for 1-on-1 private mastery sessions tailored to your player's specific goals.
             </p>
             <Link
               to="/contact"

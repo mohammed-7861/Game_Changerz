@@ -35,8 +35,6 @@ const testimonials = [
   }
 ];
 
-// Duplicate testimonials for seamless infinite scroll
-const duplicatedTestimonials = [...testimonials, ...testimonials];
 
 const TestimonialMarquee = () => {
   const renderStars = (rating: number) => {
@@ -52,7 +50,7 @@ const TestimonialMarquee = () => {
   };
 
   return (
-    <section className="py-16 bg-soft-charcoal/5 overflow-hidden">
+    <section className="py-16 bg-sky-blue/10">
       <div className="container-max">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -64,40 +62,45 @@ const TestimonialMarquee = () => {
           What Parents Are Saying
         </motion.h2>
 
-        <div className="relative">
-          <motion.div
-            className="flex space-x-6"
-            animate={{
-              x: [0, -100 * testimonials.length], // Move by the width of one set of testimonials
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 30, // Adjust speed as needed
-                ease: "linear",
-              },
-            }}
-            style={{ width: `${duplicatedTestimonials.length * 350}px` }} // Adjust based on card width
-          >
-            {duplicatedTestimonials.map((testimonial, index) => (
-              <div
-                key={`${testimonial.name}-${index}`}
-                className="flex-shrink-0 w-80 bg-clean-white rounded-lg shadow-sm border border-soft-charcoal/10 p-6 hover:shadow-md transition-shadow duration-200"
-              >
-                <div className="flex items-center mb-4">
-                  {renderStars(testimonial.rating)}
-                </div>
-                <p className="text-soft-charcoal/80 mb-4 italic leading-relaxed">
-                  "{testimonial.text}"
-                </p>
-                <p className="font-semibold text-soft-charcoal">
-                  - {testimonial.name}
-                </p>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+          className="flex flex-wrap justify-center gap-8"
+        >
+          {testimonials.map((testimonial, index) => (
+            <motion.div
+              key={`${testimonial.name}-${index}`}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.6, ease: "easeOut" }
+                }
+              }}
+              className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[400px] bg-clean-white rounded-lg shadow-sm border-2 border-fresh-green/30 p-6 hover:shadow-md hover:border-fresh-green transition-all duration-200"
+            >
+              <div className="flex items-center mb-4">
+                {renderStars(testimonial.rating)}
               </div>
-            ))}
-          </motion.div>
-        </div>
+              <p className="text-soft-charcoal/80 mb-4 italic leading-relaxed">
+                "{testimonial.text}"
+              </p>
+              <p className="font-semibold text-fresh-green text-right">
+                - {testimonial.name}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

@@ -19,22 +19,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-clean-white/80 hover:text-sky-blue transition-colors duration-200">
+                <Link to="/" className="text-clean-white/80 hover:text-fresh-green transition-colors duration-200">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/sessions" className="text-clean-white/80 hover:text-sky-blue transition-colors duration-200">
+                <Link to="/sessions" className="text-clean-white/80 hover:text-fresh-green transition-colors duration-200">
                   Sessions
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="text-clean-white/80 hover:text-sky-blue transition-colors duration-200">
+                <Link to="/pricing" className="text-clean-white/80 hover:text-fresh-green transition-colors duration-200">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-clean-white/80 hover:text-sky-blue transition-colors duration-200">
+                <Link to="/contact" className="text-clean-white/80 hover:text-fresh-green transition-colors duration-200">
                   Contact Us
                 </Link>
               </li>
@@ -49,7 +49,7 @@ const Footer = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block bg-sky-blue text-white px-6 py-2 rounded-lg font-medium hover:bg-sky-blue/90 transition-colors duration-200"
+              className="inline-block bg-fresh-green text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors duration-200"
             >
               Contact Us
             </Link>

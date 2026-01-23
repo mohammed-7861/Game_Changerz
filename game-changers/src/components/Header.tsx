@@ -23,12 +23,19 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-clean-white shadow-sm border-b border-soft-charcoal/10">
-      <div className="container-max">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-soft-charcoal">Game Changers</h1>
+    <header className="sticky top-0 z-50 bg-clean-white shadow-sm border-b border-soft-charcoal/10 py-6">
+      <div className="container-max relative">
+        <div className="flex items-center justify-between min-h-16">
+          {/* Logo Container - Left Side */}
+          <div className="flex-shrink-0 flex flex-col items-center gap-2">
+            <img 
+              src="/IMG_0960.jpeg" 
+              alt="Game Changers Logo" 
+              className="h-12 md:h-[60px] w-auto object-contain"
+            />
+            <div className="text-lg md:text-xl font-bold text-fresh-green text-center leading-tight">
+              Game Changers
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -37,8 +44,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-soft-charcoal hover:text-sky-blue transition-colors duration-200 font-medium ${
-                  location.pathname === item.path ? 'text-sky-blue' : ''
+                className={`text-soft-charcoal hover:text-fresh-green transition-colors duration-200 font-medium ${
+                  location.pathname === item.path ? 'text-fresh-green' : ''
                 }`}
               >
                 {item.label}
@@ -60,7 +67,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-soft-charcoal hover:text-sky-blue transition-colors duration-200"
+              className="text-soft-charcoal hover:text-fresh-green transition-colors duration-200"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -75,8 +82,8 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium text-soft-charcoal hover:text-sky-blue transition-colors duration-200 ${
-                    location.pathname === item.path ? 'text-sky-blue' : ''
+                  className={`block px-3 py-2 text-base font-medium text-soft-charcoal hover:text-fresh-green transition-colors duration-200 ${
+                    location.pathname === item.path ? 'text-fresh-green' : ''
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -13,7 +13,7 @@ const values = [
     icon: Zap,
     title: "Extra Touches, Techy Skills",
     description: "We provide the extra touches and 'techy' skills needed to make high-level play feel like instinct.",
-    color: "text-sky-blue"
+    color: "text-fresh-green"
   },
   {
     icon: Heart,

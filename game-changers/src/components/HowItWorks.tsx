@@ -4,23 +4,18 @@ import { motion } from 'framer-motion';
 const steps = [
   {
     number: 1,
-    title: "Book your time via Calendly",
-    description: "Choose a session that fits your schedule and age group."
+    title: "Book Your Session",
+    description: "Choose a time that works for your player and sign up online."
   },
   {
     number: 2,
-    title: "You'll receive a text to confirm via Venmo",
-    description: "We'll send you payment details to secure your spot."
+    title: "Pay & Get Confirmed",
+    description: "$25 per session. Simple payment, instant confirmation. No contracts, no hassle."
   },
   {
     number: 3,
-    title: "Send $25 to [@handle] with your player's name and date",
-    description: "Complete payment to confirm your reservation."
-  },
-  {
-    number: 4,
-    title: "Get your auto-confirmation and hit the pitch!",
-    description: "Receive confirmation and be ready for an amazing session."
+    title: "Show Up & Improve",
+    description: "Come ready to work. Leave with more confidence and better skills."
   }
 ];
 
@@ -57,7 +52,7 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto">
-            Getting started is simple. Follow these four easy steps to book your session.
+            Getting started is simple. Follow these three easy steps to book your session.
           </p>
         </motion.div>
 
@@ -66,7 +61,7 @@ const HowItWorks = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
         >
           {steps.map((step, index) => (
             <motion.div
@@ -74,7 +69,7 @@ const HowItWorks = () => {
               variants={itemVariants}
               className="text-center"
             >
-              <div className="card">
+              <div className="step-card card">
                 <div className="w-16 h-16 bg-sky-blue rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">{step.number}</span>
                 </div>

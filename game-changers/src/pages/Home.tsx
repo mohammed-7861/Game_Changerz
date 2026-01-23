@@ -1,17 +1,22 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
-import Values from '../components/Values';
+import TheGap from '../components/TheGap';
+import ThreePillars from '../components/ThreePillars';
+import SecondNature from '../components/SecondNature';
 import TestimonialMarquee from '../components/TestimonialMarquee';
 import HowItWorks from '../components/HowItWorks';
+import FinalCTA from '../components/FinalCTA';
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Values />
+      <TheGap />
+      <ThreePillars />
+      <SecondNature />
       <TestimonialMarquee />
       <HowItWorks />
+      <FinalCTA />
     </div>
   );
 };

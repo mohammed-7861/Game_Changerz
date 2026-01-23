@@ -45,7 +45,7 @@ const SessionCard: React.FC<SessionCardProps> = ({ title, description, type }) =
   return (
     <motion.div
       whileHover={{ scale: 1.02, y: -4 }}
-      className="card"
+      className="card hover:border-fresh-green"
     >
       <h3 className="text-xl font-bold text-soft-charcoal mb-3">
         {title}
@@ -55,7 +55,7 @@ const SessionCard: React.FC<SessionCardProps> = ({ title, description, type }) =
       </p>
       <button
         onClick={handleCalendlyClick}
-        className="w-full btn-primary"
+        className="w-full btn-secondary"
       >
         Book Now
       </button>

@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-sky-blue section-padding">
+    <section className="bg-sky-blue/20 section-padding">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -21,10 +21,10 @@ const Hero = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-soft-charcoal mb-6 leading-tight">
-            Where Confidence Becomes Second Nature
+            Where "Techy" Skill Meets Total Confidence.
           </h1>
           <p className="text-lg md:text-xl text-soft-charcoal/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Empowering players aged 10-15 to bridge the gap from Rec to Club and High School through technical mastery and connection.
+            Bridging the gap from Rec to Elite. We help players aged 10-15 turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -32,7 +32,7 @@ const Hero = () => {
             onClick={handleCalendlyClick}
             className="btn-primary text-lg px-8 py-4"
           >
-            Book Your Session
+            Start Your Journey
           </motion.button>
         </motion.div>
       </div>

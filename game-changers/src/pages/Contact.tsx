@@ -64,23 +64,37 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
-      // For now, we'll use mailto since no backend is specified
-      const subject = encodeURIComponent('Game Changers Contact Form');
-      const body = encodeURIComponent(`
-Parent Name: ${formData.parentName}
-Kid's Name: ${formData.kidName}
-Age Group: ${formData.ageGroup}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Message: ${formData.message || 'No message provided'}
-      `);
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/spikeballclubrb@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: formData.parentName,
+            kidName: formData.kidName,
+            ageGroup: formData.ageGroup,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message || 'No message provided',
+            _subject: 'Game Changers Contact Form Submission'
+          })
+        });
 
-      window.location.href = `mailto:spikeballclubrb@gmail.com?subject=${subject}&body=${body}`;
-      setIsSubmitted(true);
+        if (response.ok) {
+          setIsSubmitted(true);
+        } else {
+          throw new Error('Failed to send');
+        }
+      } catch (error) {
+        alert('Error sending message. Please email us directly at spikeballclubrb@gmail.com');
+        console.error('Form submission error:', error);
+      }
     }
   };
 
@@ -257,7 +271,7 @@ Message: ${formData.message || 'No message provided'}
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-soft-charcoal/20 rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-soft-charcoal/20 rounded-lg focus:ring-2 focus:ring-fresh-green focus:border-transparent transition-colors resize-none"
                   placeholder="Tell us about your player's goals and any questions you have..."
                 />
               </div>
