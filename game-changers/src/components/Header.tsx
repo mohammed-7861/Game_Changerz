@@ -12,15 +12,6 @@ const Header = () => {
     { path: '/contact', label: 'Contact Us' },
   ];
 
-  const handleCalendlyClick = () => {
-    // Calendly integration will be added later
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/spikeballclubrb/soccer-training-session?hide_gdpr_banner=1'
-      });
-    }
-    return false;
-  };
 
   return (
     <header className="sticky top-0 z-50 bg-clean-white shadow-sm border-b border-soft-charcoal/10 py-6">
@@ -54,12 +45,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button
-              onClick={handleCalendlyClick}
-              className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
+            <Link
+              to="/sessions"
+              className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg inline-block"
             >
               Sessions
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -89,15 +80,13 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <button
-                  onClick={() => {
-                    handleCalendlyClick();
-                    setIsMenuOpen(false);
-                  }}
-                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center"
+                <Link
+                  to="/sessions"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center block"
                 >
                   Sessions
-                </button>
+                </Link>
               </div>
             </div>
           </div>

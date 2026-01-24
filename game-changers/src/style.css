@@ -29,7 +29,13 @@
   }
 
   .card {
-    @apply bg-clean-white rounded-lg shadow-sm border border-soft-charcoal/10 p-6 transition-all duration-200 hover:shadow-md hover:-translate-y-1 hover:border-fresh-green;
+    @apply bg-clean-white rounded-lg shadow-sm border border-soft-charcoal/10 p-6 transition-all duration-200 hover:shadow-md hover:-translate-y-1 hover:border-fresh-green relative;
+  }
+  
+  /* Ensure session badges are always visible */
+  .session-card .absolute {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
   /* Standardize card heights */
@@ -67,4 +73,16 @@
 
 .container-max {
   @apply max-w-7xl mx-auto;
+}
+
+/* Hide Calendly floating badge - prevent global widget */
+.calendly-badge-widget,
+.calendly-badge-widget-wrapper {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Calendly container spacing */
+.calendly-7v7-container {
+  margin-bottom: 1rem;
 }

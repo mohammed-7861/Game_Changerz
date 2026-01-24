@@ -48,10 +48,10 @@ const Footer = () => {
               Ready to transform your game?
             </p>
             <Link
-              to="/contact"
-              className="inline-block bg-fresh-green text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors duration-200"
+              to="/sessions"
+              className="inline-block bg-sunshine-yellow text-soft-charcoal px-6 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors duration-200"
             >
-              Contact Us
+              Join a Session
             </Link>
           </div>
         </div>

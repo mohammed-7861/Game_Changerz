@@ -20,10 +20,10 @@ const FinalCTA = () => {
             Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changers</strong> hub and start playing with "proper" confidence today.
           </p>
           <Link
-            to="/contact"
+            to="/sessions"
             className="bg-sunshine-yellow text-soft-charcoal font-bold hover:bg-yellow-400 inline-block text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-lg"
           >
-            Join Game Changers
+            Book a Session
           </Link>
         </motion.div>
       </div>
