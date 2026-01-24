@@ -5,17 +5,18 @@ const Footer = () => {
   return (
     <footer className="bg-soft-charcoal text-clean-white">
       <div className="container-max section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-4xl md:mx-auto">
           {/* Brand */}
-          <div>
+          <div className="text-center md:text-left md:w-full">
             <h3 className="text-xl font-bold mb-4">Game Changers</h3>
             <p className="text-clean-white/80 mb-4">
-              Empowering players aged 10-15 to bridge the gap from Rec to Club and High School soccer.
+              Empowering players aged 10-15 to bridge the gap<br />
+              from Rec to Club and High School soccer.
             </p>
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="text-center md:text-left md:w-full">
             <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
@@ -41,19 +42,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Get Started</h4>
-            <p className="text-clean-white/80 mb-2">
-              Ready to transform your game?
-            </p>
-            <Link
-              to="/sessions"
-              className="inline-block bg-sunshine-yellow text-soft-charcoal px-6 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors duration-200"
-            >
-              Join a Session
-            </Link>
-          </div>
         </div>
 
         <div className="border-t border-clean-white/10 mt-8 pt-8 text-center text-clean-white/60">

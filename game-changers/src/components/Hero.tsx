@@ -10,7 +10,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-4xl mx-auto flex flex-col items-center justify-center"
         >
           <h1 className="text-3xl md:text-5xl font-bold text-soft-charcoal mb-6 leading-tight">
             Teaching Skill.Building Confidence.
