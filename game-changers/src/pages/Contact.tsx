@@ -15,9 +15,10 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const ageGroups = [
-    { value: '10-11', label: '10-11 years' },
-    { value: '12-13', label: '12-13 years' },
-    { value: '14-15', label: '14-15 years' }
+    { value: 'U8', label: 'U8 ' },
+    { value: 'U10', label: 'U10 ' },
+    { value: 'U12', label: 'U12 ' },
+    { value: 'U14', label: 'U14 ' }
   ];
 
   const validateForm = () => {
@@ -163,9 +164,8 @@ const Contact = () => {
                     name="parentName"
                     value={formData.parentName}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${
-                      errors.parentName ? 'border-red-300' : 'border-soft-charcoal/20'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${errors.parentName ? 'border-red-300' : 'border-soft-charcoal/20'
+                      }`}
                     placeholder="Enter parent's full name"
                   />
                   {errors.parentName && (
@@ -183,9 +183,8 @@ const Contact = () => {
                     name="kidName"
                     value={formData.kidName}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${
-                      errors.kidName ? 'border-red-300' : 'border-soft-charcoal/20'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${errors.kidName ? 'border-red-300' : 'border-soft-charcoal/20'
+                      }`}
                     placeholder="Enter kid's full name"
                   />
                   {errors.kidName && (
@@ -203,9 +202,8 @@ const Contact = () => {
                   name="ageGroup"
                   value={formData.ageGroup}
                   onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${
-                    errors.ageGroup ? 'border-red-300' : 'border-soft-charcoal/20'
-                  }`}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${errors.ageGroup ? 'border-red-300' : 'border-soft-charcoal/20'
+                    }`}
                 >
                   <option value="">Select age group</option>
                   {ageGroups.map(group => (
@@ -230,9 +228,8 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${
-                      errors.email ? 'border-red-300' : 'border-soft-charcoal/20'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${errors.email ? 'border-red-300' : 'border-soft-charcoal/20'
+                      }`}
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -250,9 +247,8 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${
-                      errors.phone ? 'border-red-300' : 'border-soft-charcoal/20'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-blue focus:border-transparent transition-colors ${errors.phone ? 'border-red-300' : 'border-soft-charcoal/20'
+                      }`}
                     placeholder="(555) 123-4567"
                   />
                   {errors.phone && (

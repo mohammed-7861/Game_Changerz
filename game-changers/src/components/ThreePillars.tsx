@@ -4,18 +4,18 @@ import { motion } from 'framer-motion';
 const pillars = [
   {
     number: "01.",
-    title: "Technical Mastery (The \"Techy\" Edge)",
+    title: "Technical Mastery",
     description: "We believe in high-volume repetition. By getting more touches in one hour than they might get in a month of team practice, we build the muscle memory that makes elite play feel like a reflex."
   },
   {
     number: "02.",
     title: "Empowered Impact",
-    description: "It's not just about the drill; it's about the decision. We empower our \"brilliant lads\" to take risks, try the nutmeg, and drive the ball forward. We don't just build players; we build game-changers."
+    description: "It's not just about the drill; it's about the decision. We empower our players to take risks, try the nutmeg, and drive the ball forward. We don't just build players; we build game-changers."
   },
   {
     number: "03.",
     title: "Connection & Community",
-    description: "We aren't a bland, corporate academy. We are a \"proper\" footy hub. We connect players from different backgrounds, creating a supportive squad where every player feels uplifted to reach their next level."
+    description: "We aren't a bland, corporate academy. We are a soccer hub that connects players from different backgrounds, creating a supportive squad where every player feels uplifted to reach their next level."
   }
 ];
 

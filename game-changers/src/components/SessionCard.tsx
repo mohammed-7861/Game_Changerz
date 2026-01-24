@@ -6,53 +6,55 @@ interface SessionCardProps {
   description: string;
   ageGroup?: string;
   type: 'available' | 'coming-soon';
+  calendlyUrl?: string;
 }
 
-const SessionCard: React.FC<SessionCardProps> = ({ title, description, ageGroup, type }) => {
+const SessionCard: React.FC<SessionCardProps> = ({
+  title,
+  description,
+  ageGroup,
+  type,
+  calendlyUrl
+}) => {
   const handleCalendlyClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    if (!window.Calendly) {
-      console.error('Calendly not loaded yet');
-      // Retry after a short delay if script is still loading
-      setTimeout(() => {
-        if (window.Calendly) {
-          window.Calendly.initPopupWidget({
-            url: 'https://calendly.com/game__changers/soccer-training-session?hide_gdpr_banner=1'
-          });
-        }
-      }, 500);
+    if (!window.Calendly || !calendlyUrl) {
+      console.error('Calendly not loaded');
       return;
     }
 
     window.Calendly.initPopupWidget({
-      url: 'https://calendly.com/game__changers/soccer-training-session?hide_gdpr_banner=1'
+      url: calendlyUrl
     });
   };
 
+  /* ======================
+     COMING SOON CARD
+     ====================== */
   if (type === 'coming-soon') {
     return (
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="card relative overflow-hidden opacity-75 session-card"
+        className="card relative opacity-75"
       >
-        <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm font-medium z-10 opacity-100">
+        <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm">
           Coming Soon
         </div>
-        <h3 className="text-xl font-bold text-soft-charcoal mb-3">
-          {title}
-        </h3>
-        <p className="text-soft-charcoal/70 mb-4">
-          {description}
-        </p>
+
+        <h3 className="text-xl font-bold mb-3">{title}</h3>
+        <p className="text-soft-charcoal/70 mb-4">{description}</p>
+
+        {/* ✅ ADD AGE GROUP HERE */}
         {ageGroup && (
-          <div className="mb-6">
-            <div className="text-soft-charcoal/60 text-sm">👥 {ageGroup}</div>
+          <div className="mb-6 text-soft-charcoal/60 text-sm">
+            👥 {ageGroup}
           </div>
         )}
+
         <button
           disabled
-          className="w-full bg-soft-charcoal/20 text-soft-charcoal/50 px-6 py-3 rounded-lg font-medium cursor-not-allowed"
+          className="w-full bg-soft-charcoal/20 text-soft-charcoal/50 py-3 rounded-lg cursor-not-allowed"
         >
           Coming Soon
         </button>
@@ -60,30 +62,29 @@ const SessionCard: React.FC<SessionCardProps> = ({ title, description, ageGroup,
     );
   }
 
+  /* ======================
+     AVAILABLE CARD
+     ====================== */
   return (
     <motion.div
       whileHover={{ scale: 1.02, y: -4 }}
-      className="card hover:border-fresh-green relative session-card"
+      className="card relative hover:border-fresh-green"
     >
-      <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm font-medium z-10 opacity-100">
+      <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm">
         Available Now
       </div>
-      <h3 className="text-xl font-bold text-soft-charcoal mb-3">
-        {title}
-      </h3>
-      <p className="text-soft-charcoal/70 mb-4">
-        {description}
-      </p>
+
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-soft-charcoal/70 mb-4">{description}</p>
+
       {ageGroup && (
-        <div className="mb-6">
-          <div className="text-soft-charcoal/60 text-sm">👥 {ageGroup}</div>
+        <div className="mb-6 text-soft-charcoal/60 text-sm">
+          👥 {ageGroup}
         </div>
       )}
-      {/* Calendly container - hidden, only used for popup trigger */}
-      <div className="calendly-7v7-container hidden"></div>
+
       <button
         onClick={handleCalendlyClick}
-        id="book-7v7-btn"
         className="w-full btn-secondary"
       >
         Book Session

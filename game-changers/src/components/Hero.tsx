@@ -13,10 +13,10 @@ const Hero = () => {
           className="text-center max-w-4xl mx-auto flex flex-col items-center justify-center"
         >
           <h1 className="text-3xl md:text-5xl font-bold text-soft-charcoal mb-6 leading-tight">
-            Teaching Skill.Building Confidence.
+            Teaching Skill. Building Confidence.
           </h1>
           <p className="text-lg md:text-xl text-soft-charcoal/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Bridging the gap from Rec to Elite. We help players aged 10-15 turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter.
+            We help players aged 7-14 turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter. Whether you want to go on to club, highschool or even just home knowing you played an amaing game, we've got you covered.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}

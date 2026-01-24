@@ -12,7 +12,7 @@ const focusAreas = [
   },
   {
     title: "The Game IQ",
-    description: "Understanding movement, transitions, and making a \"brilliant\" impact on the pitch."
+    description: "Understanding movement, transitions, and making a impact on the pitch."
   }
 ];
 
@@ -49,7 +49,7 @@ const SecondNature = () => {
             From Thinking to Instinct.
           </h2>
           <p className="text-lg text-soft-charcoal/70 leading-relaxed mb-8">
-            When a player stops thinking about their feet and starts seeing the field, everything changes. Our curriculum is specifically designed for the 10-15 age group—the critical window for developing specialized technical "tekkers."
+            When a player stops thinking about their feet and starts seeing the field, everything changes. Our curriculum is specifically designed for the 7-14 age group—the critical window for developing specialized technical talent.
           </p>
         </motion.div>
 
