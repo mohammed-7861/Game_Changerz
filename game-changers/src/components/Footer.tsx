@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="text-center md:text-left md:w-full">
             <h3 className="text-xl font-bold mb-4">Game Changers</h3>
             <p className="text-clean-white/80 mb-4">
-              Empowering players aged 10-15 to bridge the gap<br />
-              from Rec to Club and High School soccer.
+              Empowering and guiding the next generation of soccer players
+              to reach their full potential.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-clean-white/10 mt-8 pt-8 text-center text-clean-white/60">
-          <p>&copy; 2026 Game Changers Youth Soccer. All rights reserved.</p>
+          <p>&copy; 2026 <strong>Game Changers</strong>. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -17,7 +17,7 @@ const Pricing = () => {
               High-Level Coaching. Real-World Value.
             </h1>
             <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto mb-8">
-              We believe that elite development shouldn't come with a "scammy" price tag or complex contracts.
+              We believe that elite development shouldn't come with a absurd price tag or complicated contracts.
             </p>
           </motion.div>
 
@@ -36,10 +36,10 @@ const Pricing = () => {
                 <div className="text-xl font-semibold text-soft-charcoal">👥 Small groups for maximum attention.</div>
               </div>
             </div>
-            
+
             <div className="card text-center">
               <div className="text-6xl font-bold text-fresh-green mb-4">
-                $25
+                $20
               </div>
               <div className="text-xl text-soft-charcoal/70 mb-6">
                 per session
