@@ -16,7 +16,7 @@ const Hero = () => {
             Teaching Skill. Building Confidence.
           </h1>
           <p className="text-lg md:text-xl text-soft-charcoal/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            We help players aged 7-14 turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter. Whether you want to go on to club, highschool or even just home knowing you played an amaing game, we've got you covered.
+            We help players aged 7-14 turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter. Whether you want to go on to club, highschool or even just home knowing you played an amazing game, we've got you covered.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
