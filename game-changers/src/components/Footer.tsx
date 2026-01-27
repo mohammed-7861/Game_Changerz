@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-4xl md:mx-auto">
           {/* Brand */}
           <div className="text-center md:text-left md:w-full">
-            <h3 className="text-xl font-bold mb-4">Game Changers</h3>
+            <h3 className="text-xl font-bold mb-4">Game Changerz</h3>
             <p className="text-clean-white/80 mb-4">
               Empowering and guiding the next generation of soccer players
               to reach their full potential.
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-clean-white/10 mt-8 pt-8 text-center text-clean-white/60">
-          <p>&copy; 2026 <strong>Game Changers</strong>. All rights reserved.</p>
+          <p>&copy; 2026 <strong>Game Changerz</strong>. All rights reserved.</p>
         </div>
       </div>
     </footer>

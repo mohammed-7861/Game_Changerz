@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 
 const TheGap = () => {
@@ -19,7 +19,7 @@ const TheGap = () => {
             Many talented youth players have the heart, but when the game speeds up, they hesitate. They play it safe because they're worried about making mistakes.
           </p>
           <p className="text-lg text-soft-charcoal/70 leading-relaxed">
-            At <strong>Game Changers</strong>, we identify <u>The Gap</u>—that space between having the skill and having the confidence to use it. Whether they are looking to jump from Rec to Club or Club to High School, we provide a training environment where bravery is rewarded and "extra touches" are the foundation of every session.
+            At <strong>Game Changerz</strong>, we identify <u>The Gap</u>—that space between having the skill and having the confidence to use it. Whether they are looking to jump from Rec to Club or High School, we provide a training environment where bravery is rewarded and "extra touches" are the foundation of every session.
           </p>
         </motion.div>
       </div>

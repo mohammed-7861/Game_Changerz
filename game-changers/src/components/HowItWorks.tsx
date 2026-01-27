@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 
 const steps = [
@@ -10,7 +10,7 @@ const steps = [
   {
     number: 2,
     title: "Pay & Get Confirmed",
-    description: "$25 per session. Simple payment, instant confirmation. No contracts, no hassle."
+    description: "$20 per session. Simple payment, instant confirmation. No contracts, no hassle."
   },
   {
     number: 3,

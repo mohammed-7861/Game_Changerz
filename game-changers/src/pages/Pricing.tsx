@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const Pricing = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-soft-charcoal mb-4">
-              High-Level Coaching. Real-World Value.
+              High-Level Coaching. Real Value.
             </h1>
             <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto mb-8">
               We believe that elite development shouldn't come with a absurd price tag or complicated contracts.

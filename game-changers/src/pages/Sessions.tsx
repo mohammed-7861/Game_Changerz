@@ -53,7 +53,7 @@ const Sessions: React.FC = () => {
               description="Perfect for players who are just discovering the joy of the game."
               ageGroup="Ages 7-8"
               type="available"
-              calendlyUrl="https://calendly.com/game__changers/training_session"
+              calendlyUrl="https://calendly.com/game__changerz/training_session"
             />
 
             {/* U10 */}
@@ -62,7 +62,7 @@ const Sessions: React.FC = () => {
               description="Great for players who are starting to find their place on the pitch."
               ageGroup="Ages 9–10"
               type="available"
-              calendlyUrl="https://calendly.com/game__changers/soccer-training-session?hide_gdpr_banner=1"
+              calendlyUrl="https://calendly.com/game__changerz/soccer-training-session?hide_gdpr_banner=1"
             />
 
             {/* U12 */}

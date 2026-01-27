@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 
 const pillars = [
@@ -10,7 +10,7 @@ const pillars = [
   {
     number: "02.",
     title: "Empowered Impact",
-    description: "It's not just about the drill; it's about the decision. We empower our players to take risks, try the nutmeg, and drive the ball forward. We don't just build players; we build game-changers."
+    description: "It's not just about the drill; it's about the decision. We empower our players to take risks, try the nutmeg, and drive the ball forward. We don't just build players; we build game changerz."
   },
   {
     number: "03.",

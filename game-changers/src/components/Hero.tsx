@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ const Hero = () => {
               to="/sessions"
               className="bg-sunshine-yellow text-soft-charcoal font-bold text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-lg inline-block"
             >
-              Book a Session
+              Join a Session
             </Link>
           </motion.div>
         </motion.div>

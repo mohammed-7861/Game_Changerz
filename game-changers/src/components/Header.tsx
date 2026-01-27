@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
@@ -20,12 +20,12 @@ const Header = () => {
           {/* Logo Container - Left Side */}
           <div className="flex-shrink-0 flex flex-col items-center gap-2">
             <img
-              src="/IMG_0960.jpeg"
-              alt="Game Changers Logo"
+              src="/logo.png"
+              alt="Game Changerz Logo"
               className="h-24 md:h-[120px] w-auto object-contain"
             />
             <div className="text-lg md:text-xl font-bold text-fresh-green text-center leading-tight">
-              Game Changers
+              Game Changerz
             </div>
           </div>
 

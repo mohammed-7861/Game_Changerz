@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -17,13 +17,13 @@ const FinalCTA = () => {
             Ready to change your game?
           </h2>
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
-            Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changers</strong> hub and start playing with "proper" confidence today.
+            Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changerz</strong> , and start playing with confidence today.
           </p>
           <Link
             to="/sessions"
             className="bg-sunshine-yellow text-soft-charcoal font-bold hover:bg-yellow-400 inline-block text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-lg"
           >
-            Book a Session
+            Join a Session
           </Link>
         </motion.div>
       </div>

@@ -1,6 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+// allow for stars to be partially filled?
+
 
 const testimonials = [
   {
@@ -9,19 +11,20 @@ const testimonials = [
     text: "My son's confidence exploded after just three sessions. He's finally trying those bold, creative moves in his club games that he used to be too shy to attempt."
   },
   {
-    name: "Aria Gupta",
-    rating: 5,
-    text: "The focus on 'extra touches' really made the game feel like second nature for my daughter. She feels so much more connected to the ball and her teammates now."
-  },
-  {
     name: "Kevin Chen",
     rating: 4,
     text: "This is the best investment for a rec player looking to bridge the gap to club level. The coaches empower the kids to actually make an impact on the pitch."
   },
   {
+    name: "Aria Gupta",
+    rating: 5,
+    text: "The focus on 'extra touches' really made the game feel like second nature for my daughter. She feels so much more connected to the ball and her teammates now."
+  },
+
+  {
     name: "Liam O'Connor",
     rating: 5,
-    text: "Game Changers is more than just drills; it's about character. My kids love the supportive, high-energy atmosphere and look forward to every single session."
+    text: "Game Changerz is more than just drills; it's about character. My kids love the supportive, high-energy atmosphere and look forward to every single session."
   },
   {
     name: "Mei Lin",
@@ -41,13 +44,11 @@ const TestimonialMarquee = () => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
         key={index}
-        size={16}
-        className={`${
-          index < rating ? 'text-sunshine-yellow fill-sunshine-yellow' : 'text-soft-charcoal/30'
-        }`}
+        size={16 * 1.1}
+        className={`${index < rating ? 'text-sunshine-yellow fill-sunshine-yellow' : 'text-soft-charcoal/30'}`}
       />
     ));
-  };
+  }
 
   return (
     <section className="py-16 bg-sky-blue/10">
@@ -59,7 +60,10 @@ const TestimonialMarquee = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl font-bold text-center text-soft-charcoal mb-12"
         >
-          What Parents Are Saying
+          What Parents Are Saying <br />
+          <span className="text-sm text-soft-charcoal/50">
+            (Real Testimonials)
+          </span>
         </motion.h2>
 
         <motion.div
