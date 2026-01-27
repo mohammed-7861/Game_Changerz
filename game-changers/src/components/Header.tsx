@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo Container - Left Side */}
           <div className="flex-shrink-0 flex flex-col items-center gap-2">
             <img
-              src="/hairy.png"
+              src="public/hairy.png"
               alt="Game Changerz Logo"
               className="h-24 md:h-[120px] w-auto object-contain"
             />
