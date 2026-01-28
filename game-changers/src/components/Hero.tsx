@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="relative h-[80vh] section-padding overflow-hidden">
+    <section className="relative h-[75vh] section-padding overflow-hidden">
       { /* Background */}
       <SoccerBackground />
 
