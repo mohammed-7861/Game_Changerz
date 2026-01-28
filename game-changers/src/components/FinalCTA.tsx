@@ -19,13 +19,17 @@ const FinalCTA = () => {
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
             Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changerz</strong> , and start playing with confidence today.
           </p>
-          <Link
-            to="/sessions"
-            className="bg-sunshine-yellow text-soft-charcoal font-bold hover:bg-yellow-400 inline-block text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-lg"
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
           >
-            Join a Session
-          </Link>
-        </motion.div>
+            <Link
+              to="/sessions"
+              className="bg-sunshine-yellow text-soft-charcoal font-bold text-lg px-8 py-4 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
+            >Join a Session</Link>
+          </motion.div>
+        </motion.div> 
       </div>
     </section>
   );
