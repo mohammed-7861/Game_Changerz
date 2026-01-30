@@ -1,12 +1,19 @@
-
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   return (
     <div className="min-h-screen">
-      <section className="section-padding bg-clean-white" style={{ backgroundImage: "url('pb.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section
+        className="section-padding"
+        style={{
+          backgroundImage: "url('/pb.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container-max">
+          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,7 +24,9 @@ const Pricing = () => {
               High-Level Coaching. Real Value.
             </h1>
             <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto mb-8">
-              <strong>We believe that elite development shouldn't come with a absurd price tag or complicated contracts.</strong>
+              <strong>
+                We believe elite development shouldn’t come with an absurd price tag or complicated contracts.
+              </strong>
             </p>
           </motion.div>
 
@@ -28,29 +37,33 @@ const Pricing = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-2xl mx-auto mb-12"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-xl mx-auto">
-              <div className="text-center">
-                <div className="text-xl font-semibold text-soft-charcoal">📅 No long-term commitments.</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 max-w-xl mx-auto">
+              <div className="text-center text-lg font-semibold text-soft-charcoal">
+                📅 No long-term commitments
               </div>
-              <div className="text-center">
-                <div className="text-xl font-semibold text-soft-charcoal">👥 Small groups for maximum attention.</div>
+              <div className="text-center text-lg font-semibold text-soft-charcoal">
+                👥 Small groups for maximum attention
               </div>
             </div>
 
-            <div className="card text-center">
-              <div className="text-6xl font-bold text-fresh-green mb-4">
-                $20
+            {/* Glass Pricing Card */}
+            <div className="text-center">
+          <div className="glass-text px-6 py-8 mb-8 max-w-5xl mx-auto rounded-lg shadow-lg border border-soft-charcoal/10">
+                <div className="text-6xl font-bold text-fresh-green mb-4">
+                  $20
+                </div>
+                <div className="text-xl text-soft-charcoal/70 mb-6">
+                  per session
+                </div>
+                <p className="text-soft-charcoal/80 leading-relaxed">
+                  Whether you bring one player or a whole squad, the price stays simple.
+                  We’re here for the love of the game and the growth of the players.
+                </p>
               </div>
-              <div className="text-xl text-soft-charcoal/70 mb-6">
-                per session
-              </div>
-              <p className="text-soft-charcoal/80 leading-relaxed mb-4">
-                Whether you bring one player or a whole squad, the price stays simple. We are here for the love of the game and the growth of the players.
-              </p>
             </div>
           </motion.div>
 
-          {/* Private Sessions Section */}
+          {/* Private Sessions */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,11 +74,17 @@ const Pricing = () => {
               Looking for a more personal touch?
             </h2>
             <p className="text-lg text-soft-charcoal/70 mb-8 leading-relaxed">
-              <strong>Each out for 1-on-1 private mastery sessions tailored to your player's specific goals.</strong>
+              <strong>
+                Reach out for 1-on-1 private mastery sessions tailored to your player’s specific goals.
+              </strong>
             </p>
+
             <Link
               to="/contact"
-              className="bg-sky-blue text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg hover:bg-blue-500 inline-block"
+              className="bg-sky-blue text-white font-bold px-6 py-3 rounded-lg
+                         transition-all duration-200
+                         hover:scale-105 hover:shadow-lg hover:bg-blue-500
+                         inline-block"
             >
               Contact Us
             </Link>
