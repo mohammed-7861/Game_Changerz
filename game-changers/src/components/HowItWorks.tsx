@@ -39,7 +39,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="section-padding bg-clean-white">
+    <section className="section-padding bg-pastel-yellow section-pattern">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -69,7 +69,7 @@ const HowItWorks = () => {
               variants={itemVariants}
               className="text-center"
             >
-              <div className="step-card card">
+              <div className="step-card card glass-text hover:shadow-md hover:border-fresh-green transition-all duration-200">
                 <div className="w-16 h-16 bg-sky-blue rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">{step.number}</span>
                 </div>

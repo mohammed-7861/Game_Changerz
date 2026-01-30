@@ -11,6 +11,7 @@ export default {
         'clean-white': '#FFFFFF',
         'fresh-green': '#4CAF50',
         'sunshine-yellow': '#FFD54F',
+        'pastel-yellow': '#FFF8E1',
         'soft-charcoal': '#2E2E2E',
       },
       fontFamily: {

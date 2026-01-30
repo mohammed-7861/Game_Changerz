@@ -39,7 +39,7 @@ const ThreePillars = () => {
   };
 
   return (
-    <section className="section-padding bg-fresh-green/15">
+    <section className="section-padding bg-fresh-green/15 section-pattern">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ const ThreePillars = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="pillar-card card"
+              className="pillar-card card glass-text hover:shadow-md hover:border-fresh-green transition-all duration-200"
             >
               <div className="text-3xl font-bold text-sky-blue mb-4">
                 {pillar.number}

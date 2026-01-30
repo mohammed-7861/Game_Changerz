@@ -36,7 +36,7 @@ const SecondNature = () => {
   };
 
   return (
-    <section className="section-padding bg-clean-white">
+    <section className="section-padding bg-pastel-yellow section-pattern">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ const SecondNature = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="focus-item card border-2 border-sky-blue/30"
+              className="focus-item card glass-text border-2 border-sky-blue/30 hover:shadow-md hover:border-fresh-green transition-all duration-200"
             >
               <h4 className="text-lg font-bold text-sky-blue mb-2">
                 {area.title}

@@ -36,7 +36,7 @@ const SessionCard: React.FC<SessionCardProps> = ({
     return (
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="card relative opacity-75"
+        className="card glass-text relative opacity-75"
       >
         <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm">
           Coming Soon
@@ -68,7 +68,7 @@ const SessionCard: React.FC<SessionCardProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.02, y: -4 }}
-      className="card relative hover:border-fresh-green"
+      className="card glass-text relative hover:border-fresh-green"
     >
       <div className="absolute top-4 right-4 bg-fresh-green text-white px-3 py-1 rounded-full text-sm">
         Available Now

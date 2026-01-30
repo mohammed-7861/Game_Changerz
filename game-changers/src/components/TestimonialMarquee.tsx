@@ -51,7 +51,7 @@ const TestimonialMarquee = () => {
   }
 
   return (
-    <section className="py-16 bg-sky-blue/10">
+    <section className="py-16 bg-sky-blue/10 section-pattern">
       <div className="container-max">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -91,7 +91,7 @@ const TestimonialMarquee = () => {
                   transition: { duration: 0.6, ease: "easeOut" }
                 }
               }}
-              className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[400px] bg-clean-white rounded-lg shadow-sm border-2 border-fresh-green/30 p-6 hover:shadow-md hover:border-fresh-green transition-all duration-200"
+              className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[400px] glass-text p-6 hover:shadow-md hover:border-fresh-green transition-all duration-200"
             >
               <div className="flex items-center mb-4">
                 {renderStars(testimonial.rating)}
