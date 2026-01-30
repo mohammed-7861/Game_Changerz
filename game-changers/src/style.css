@@ -47,40 +47,41 @@
     90px 0;
 
   background-repeat: repeat-x;
+
 }
-
 .glass-text {
-  /* Core glass surface */
-  background: rgba(255, 255, 255, var(--glass-opacity, .25));
+  /* Core glass surface - Keep current low opacity */
+  position: relative; 
+  background: rgba(255, 255, 255, var(--glass-fill, .06));
 
-  /* Blur + color richness */
+  /* Liquid glass optics */
+  /* Added 12px default blur and fixed missing contrast/brightness units */
   backdrop-filter:
-    blur(var(--glass-blur, 10px))
-    saturate(var(--glass-saturation, 100%))
-    brightness(var(--glass-brightness, 1));
+    blur(var(--glass-blur, 5px))
+    ;
   -webkit-backdrop-filter:
-    blur(var(--glass-blur, 3px))
-    saturate(var(--glass-saturation, 160%))
-    brightness(var(--glass-brightness, 1));
-
-  /* Edge definition */
+    blur(var(--glass-blur, 5px))
+    ;
+  /* Subtle edge definition */
   border: 1px solid rgba(
     255,
     255,
     255,
-    var(--glass-border-opacity, 0.35)
+    var(--glass-border-opacity, .22)
   );
 
-  /* Depth + liquid highlights */
+  /* Depth + specular highlight */
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.65),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.25),
-    0 var(--glass-shadow-y, 12px)
-      var(--glass-shadow-blur, 32px)
-      rgba(0, 0, 0, var(--glass-shadow-opacity, 0.01));
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.18),
+    0 var(--glass-shadow-y, 18px)
+      var(--glass-shadow-blur, 48px)
+      rgba(0, 0, 0, var(--glass-shadow-opacity, .18));
 
-  border-radius: var(--glass-radius, 16px);
+  border-radius: var(--glass-radius, 20px);
 }
+
+
 
 
 @layer components {
