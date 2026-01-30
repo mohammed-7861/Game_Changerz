@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
+   
   const [formData, setFormData] = useState({
     parentName: '',
     kidName: '',
@@ -129,7 +130,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="section-padding bg-clean-white">
+      <section className="section-padding bg-clean-white" style={{ backgroundImage: "url('f.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="container-max">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

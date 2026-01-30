@@ -22,7 +22,7 @@ const Hero = () => {
 
           <div className="glass-text px-6 py-5 mb-8 max-w-2xl mx-auto">
             <p className="text-lg md:text-xl text-soft-charcoal/90 leading-relaxed">
-              We help players aged 7-14 help turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter. Whether you want to go on to club, highschool or even just home knowing you played an amazing game, we've got you covered.
+              We help players aged 7-13 help turn technical mastery into "second nature" instinct, so they can finally make the impact they're capable of in the games that matter. Whether you want to go on to club, highschool or even just home knowing you played an amazing game, we've got you covered.
             </p>
             </div>
 

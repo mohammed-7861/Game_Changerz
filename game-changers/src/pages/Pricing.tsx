@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Pricing = () => {
   return (
     <div className="min-h-screen">
-      <section className="section-padding bg-clean-white">
+      <section className="section-padding bg-clean-white" style={{ backgroundImage: "url('pb.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="container-max">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ const Pricing = () => {
               High-Level Coaching. Real Value.
             </h1>
             <p className="text-lg text-soft-charcoal/70 max-w-2xl mx-auto mb-8">
-              We believe that elite development shouldn't come with a absurd price tag or complicated contracts.
+              <strong>We believe that elite development shouldn't come with a absurd price tag or complicated contracts.</strong>
             </p>
           </motion.div>
 
@@ -61,7 +61,7 @@ const Pricing = () => {
               Looking for a more personal touch?
             </h2>
             <p className="text-lg text-soft-charcoal/70 mb-8 leading-relaxed">
-              Reach out for 1-on-1 private mastery sessions tailored to your player's specific goals.
+              <strong>Each out for 1-on-1 private mastery sessions tailored to your player's specific goals.</strong>
             </p>
             <Link
               to="/contact"
