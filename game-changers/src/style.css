@@ -51,12 +51,12 @@
 
 .glass-text {
   /* Core glass surface */
-  background: rgba(255, 255, 255, var(--glass-opacity, 0.25));
+  background: rgba(255, 255, 255, var(--glass-opacity, .25));
 
   /* Blur + color richness */
   backdrop-filter:
-    blur(var(--glass-blur, 3px))
-    saturate(var(--glass-saturation, 170%))
+    blur(var(--glass-blur, 10px))
+    saturate(var(--glass-saturation, 100%))
     brightness(var(--glass-brightness, 1));
   -webkit-backdrop-filter:
     blur(var(--glass-blur, 3px))
