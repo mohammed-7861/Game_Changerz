@@ -36,7 +36,7 @@ const SecondNature = () => {
   };
 
   return (
-    <section className="section-padding bg-pastel-yellow section-pattern">
+    <section className="section-padding bg-clean-white section-pattern">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
