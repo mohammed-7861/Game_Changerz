@@ -48,7 +48,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link
               to="/sessions"
-              className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg inline-block"
+              className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg inline-block text-2xl"
             >
               Sessions
             </Link>
@@ -82,11 +82,11 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-4 py-4">
+              <div className="px-4 py-4"> 
                 <Link
                   to="/sessions"
                   onClick={() => setIsMenuOpen(false)}
-                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center block"
+                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center block text-2xl"
                 >
                   Sessions
                 </Link>
