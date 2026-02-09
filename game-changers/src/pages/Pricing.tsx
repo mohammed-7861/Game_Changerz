@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   return (
-    <div className="min-h-screen">
-      <section
-        className="section-padding"
-        style={{
-          backgroundImage: "url('/pb.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+    <div
+      className="min-h-screen section-padding"
+      style={{
+        backgroundImage: "url('/pb.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <section className="section-padding">
         <div className="container-max">
           {/* Header */}
           <motion.div

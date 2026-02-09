@@ -169,3 +169,18 @@
 .calendly-7v7-container {
   margin-bottom: 1rem;
 }
+
+/* Coach card images: 1200×627 ratio, skinnier so two fit side by side */
+.coach-card-img-wrap {
+  aspect-ratio: 1200 / 627;
+  min-height: 300px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.coach-card-img-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Sessions from './pages/Sessions';
 import Pricing from './pages/Pricing';
+import Coaches from './pages/Coaches';
 import Contact from './pages/Contact';
 import { Analytics } from "@vercel/analytics/react";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sessions" element={<Sessions />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/coaches" element={<Coaches />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

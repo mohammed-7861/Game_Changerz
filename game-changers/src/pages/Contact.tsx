@@ -102,7 +102,10 @@ const Contact = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center section-padding">
+      <div
+        className="min-h-screen flex items-center justify-center section-padding"
+        style={{ backgroundImage: "url('/f.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -129,8 +132,11 @@ const Contact = () => {
   }
 
   return (
-    <div className="min-h-screen">
-      <section className="section-padding bg-clean-white" style={{ backgroundImage: "url('f.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+    <div
+      className="min-h-screen section-padding"
+      style={{ backgroundImage: "url('/f.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <section className="section-padding">
         <div className="container-max">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
