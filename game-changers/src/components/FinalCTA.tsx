@@ -17,7 +17,7 @@ const FinalCTA = () => {
             Ready to change your game?
           </h2>
           <p className="text-lg text-white/90 mb-8 leading-relaxed">
-            Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changerz</strong> , and start playing with confidence today.
+            Don't just be another player on the roster. Be the one the other team talks about. Join the <strong>Game Changerz</strong>, and start playing with confidence today.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}

@@ -62,7 +62,7 @@ const TestimonialMarquee = () => {
         >
           What Parents Are Saying <br />
           <span className="text-sm text-soft-charcoal/50">
-            (Real Testimonials)
+            Real Testimonials
           </span>
         </motion.h2>
 
