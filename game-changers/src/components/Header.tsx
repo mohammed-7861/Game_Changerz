@@ -48,7 +48,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Link
               to="/sessions"
-              className="bg-sunshine-yellow text-soft-charcoal font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg inline-block"
+              className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg inline-block"
             >
               Sessions
             </Link>
@@ -75,18 +75,18 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block px-2 py-2 text-2xl font-medium text-soft-charcoal hover:text-fresh-green transition-colors duration-200 ${location.pathname === item.path ? 'text-fresh-green' : ''
+                  className={`block px-4 py-4 text-2xl font-medium text-soft-charcoal hover:text-fresh-green transition-colors duration-200 ${location.pathname === item.path ? 'text-fresh-green' : ''
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <div className="px-2 py-4">
+              <div className="px-4 py-4">
                 <Link
                   to="/sessions"
                   onClick={() => setIsMenuOpen(false)}
-                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-5 py-3 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center block"
+                  className="bg-sunshine-yellow text-soft-charcoal font-bold px-16 py-5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg w-full text-center block"
                 >
                   Sessions
                 </Link>
