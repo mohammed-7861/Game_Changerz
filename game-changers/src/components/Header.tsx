@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo Container - Left Side */}
           <div className="flex-shrink-0 flex flex-col items-center gap-2">
             <img
-              src="\hairy.png"
+              src="/hairy.png"
               alt="Game Changerz Logo"
               className="h-24 md:h-[100px] w-auto object-contain"
             />
@@ -58,6 +58,8 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
               className="text-soft-charcoal hover:text-fresh-green transition-colors duration-200"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

@@ -22,7 +22,7 @@ const Sessions: React.FC = () => {
   }, []);
 
   return (
-    <div className="section-padding bg-clean-white" style={{ backgroundImage: "url('s.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+    <div className="section-padding bg-clean-white" style={{ backgroundImage: "url('/s.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
       <section className="section-padding">
         <div className="container-max">
           {/* Header */}

@@ -24,8 +24,7 @@ const coachesData: Coach[] = [
       "RB Rec Referee for 8+ years",
       "Graduated from RB High in 2025"
     ],
-    bio:"Throughout my soccer journey, I've been fortunate to experience the game at various levels. Yet, I always felt the lack for an enviornment where I could grow as a player outside of the usual practice and games. More importantly, I wish that I was able to work with players that had been through the soccer system and could guide me through each step of the process. Which is why I am excited to share my knowldge and expereince with players who are looking to transform their game. Outside of soccer, I am an electrical engineering student at Miramar College. And I am impecable at ping pong. "
-    
+    bio:"Throughout my soccer journey, I've been fortunate to experience the game at various levels. Yet, I always felt the lack for an enviornment where I could grow as a player outside of the usual practice and games. More importantly, I wish that I was able to work with players that had been through the soccer system and could guide me through each step of the process. Which is why I am excited to share my knowldge and expereince with players who are looking to transform their game. Outside of soccer, I am an electrical engineering student at Miramar College. And I am impecable at ping pong. "    
   }
 ];
 
