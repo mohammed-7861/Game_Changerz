@@ -15,7 +15,7 @@ const pillars = [
   {
     number: "03.",
     title: "Connection & Community",
-    description: "We aren't a bland, corporate academy. We are a soccer hub that connects players from different backgrounds, creating a supportive squad where every player feels uplifted to reach their next level."
+    description: "We aren't a bland, corporate academy. We are a soccer hub that connects players from different backgrounds, creating a supportive enviornment where every player feels uplifted to reach their next level."
   }
 ];
 
