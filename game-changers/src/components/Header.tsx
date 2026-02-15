@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container-max relative">
         <div className="flex items-center justify-between min-h-16">
           {/* Logo Container - Left Side */}
-          <div className="flex-shrink-0 flex flex-col items-center gap-2">
+          <div className="flex-shrink-0 flex flex-col items-center gap-2 pl-4 md:pl-0">
             <img
               src="/hairy.png"
               alt="Game Changerz Logo"
@@ -55,7 +55,7 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden pr-4">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
