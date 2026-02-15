@@ -20,21 +20,20 @@ const testimonials = [
     rating: 5,
     text: "The focus on 'extra touches' really made the game feel like second nature for my daughter. She feels so much more connected to the ball and her teammates now."
   },
-
   {
-    name: "Liam O'Connor",
-    rating: 5,
-    text: "Game Changerz is more than just drills; it's about character. My kids love the supportive, high-energy atmosphere and look forward to every single session."
+    name: "Rohan Sharma",
+    rating: 4,
+    text: "Professional, wholesome, and incredibly effective. The transition to high school soccer felt seamless because of the technical foundation built here."
   },
   {
     name: "Mei Lin",
     rating: 5,
     text: "The skills taught here are amazing. My son went from a hesitant rec player to one of the most confident in his age group. Highly recommend!"
   },
-  {
-    name: "Rohan Sharma",
-    rating: 4,
-    text: "Professional, wholesome, and incredibly effective. The transition to high school soccer felt seamless because of the technical foundation built here."
+    {
+    name: "Liam O'Connor",
+    rating: 5,
+    text: "Game Changerz is more than just drills; it's about character. My kids love the supportive, high-energy atmosphere and look forward to every single session."
   }
 ];
 
