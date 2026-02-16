@@ -1,6 +1,6 @@
 # Game Changers Youth Soccer Coaching Landing Page
 
-A modern, high-conversion React landing page for Game Changers, a youth soccer coaching program targeting players aged 10-15.
+A modern, high-conversion React landing page for Game Changers, a youth soccer coaching program targeting players aged 6-14.
 
 ## 🚀 Features
 
@@ -53,16 +53,19 @@ src/
 ## 🚀 Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Start development server:**
+
    ```bash
    npm run dev
    ```
 
 3. **Build for production:**
+
    ```bash
    npm run build
    ```
@@ -75,23 +78,27 @@ src/
 ## 📱 Pages & Features
 
 ### Home Page
+
 - Hero section with compelling headline and CTA
 - Values section explaining the coaching approach
 - Infinite-scrolling testimonial marquee
 - How It Works step-by-step process
 
 ### Sessions Page
+
 - 7v7 Specialists (available for booking)
 - 9v9 Mastery (coming soon)
 - 11v11 Elite (coming soon)
 - Direct Calendly integration for booking
 
 ### Pricing Page
+
 - Clear $25 per session pricing
 - Private training inquiry section
 - Link to contact page
 
 ### Contact Page
+
 - Comprehensive contact form with validation
 - Parent and player information collection
 - Age group selection (10-11, 12-13, 14-15)
@@ -100,18 +107,23 @@ src/
 ## 🔧 Configuration
 
 ### Calendly Integration
+
 The app includes Calendly widget integration. The booking URL is configured to:
+
 ```
 https://calendly.com/spikeballclubrb/soccer-training-session?hide_gdpr_banner=1
 ```
 
 To change the Calendly URL, update the `handleCalendlyClick` functions in:
+
 - `Header.tsx`
 - `Hero.tsx`
 - `SessionCard.tsx`
 
 ### Contact Form
+
 Currently uses `mailto:` for form submission. For production, consider:
+
 - EmailJS for client-side email sending
 - Formspree for simple form handling
 - Custom backend API for secure processing

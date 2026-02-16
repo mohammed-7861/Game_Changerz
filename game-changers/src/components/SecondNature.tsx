@@ -49,7 +49,7 @@ const SecondNature = () => {
             From Thinking to Instinct.
           </h2>
           <p className="text-lg text-soft-charcoal/70 leading-relaxed mb-8">
-            When a player stops thinking about their feet and starts seeing the field, everything changes. Our curriculum is specifically designed for the 7-14 age group—the critical window for developing specialized technical talent.
+            When a player stops thinking about their feet and starts seeing the field, everything changes. Our curriculum is specifically designed for the 6-14 age group—the critical window for developing specialized technical talent.
           </p>
         </motion.div>
 
