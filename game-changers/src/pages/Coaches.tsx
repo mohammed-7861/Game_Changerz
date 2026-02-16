@@ -32,7 +32,7 @@ const coachesData: Coach[] = [
     name: "Mo",
     title: "Coach ",
     professionalImage: "/mo-for.JPG",
-    casualImage: "/mo-inf.PNG",
+    casualImage: "/mooo-inf.png",
     credentials: [
       "4 years playing ECNL , 2 years varsity Soccer",
       "Played for the 2nd best team in the country at the U16 level",
