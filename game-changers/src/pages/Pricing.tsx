@@ -52,11 +52,8 @@ const Pricing = () => {
                 <div className="text-6xl font-bold text-fresh-green mb-4">
                   $20
                 </div>
-                <div className="text-xl text-soft-charcoal/70">
+                <div className="text-xl text-soft-charcoal/70 mb-5">
                   per session
-                </div>
-                <div className="text-x2 text-soft-charcoal/80 mb-6">
-                  <strong>Venmo: @game_changerz</strong>
                 </div>
                 <p className="text-soft-charcoal/80 leading-relaxed">
                   Whether you bring one player or a whole squad, the price stays simple.
